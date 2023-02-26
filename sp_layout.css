@@ -40,8 +40,7 @@ body{
    column-width: 1fr;
 }
 #logo{
-   grid-column-start: 1;
-   grid-column-end: 3;
+   grid-column:span 3;
    width: 100%;
 }
 
@@ -51,16 +50,13 @@ body{
 
 /* Horizontal Navigation List Styles */
 .horizontal{
-   grid-column-start: 1;
-   grid-column-end: 4;
+   grid-column:span 4;
 }
 footer{
-   grid-column-start: 1;
-   grid-column-end: 4;
+   grid-column:span 4;
 }
 aside{
-   grid-column-start: 1;
-   grid-column-end: 2;
+ grid-column: span 2;
 }
 .horizontal li{
    display: block;
@@ -73,9 +69,34 @@ section img{
    width: 50%;
    margin-left: auto;
    margin-right: auto;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+section p{
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0;
+   margin-bottom: 0;
 }
 
 
 
 /* Customer Comment Styles */
+aside{
+   width: 75%;
+   padding-bottom: 30px;
+}
+aside:nth-of-type(odd){
+   justify-self: right;
+}
+aside img{
+   float: left;
+   width: 20%;
+}
+aside p{
+   float: left;
+   width: 75%;
+   margin-left: 5%;
+}
 
